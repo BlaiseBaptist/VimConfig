@@ -1,4 +1,4 @@
-set runtimepath+=~/VimConfig
+set runtimepath+=~/VimConfig/
 " Disable highlight when <leader><cr> is pressed
 let mapleader = ","
 map <silent> <leader><cr> :noh<cr>
@@ -12,7 +12,8 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k set so=6
+" Set 7 lines to the cursor - when moving vertically using j/k 
+set so=6
 " Turn on the Wild menu
 set wildmenu
 " Ignore compiled files

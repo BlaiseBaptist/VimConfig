@@ -3,7 +3,7 @@ install:
 	chmod +x make.sh
 	./make.sh
 clean: 
-	rm -rf pack
+	rm -rf ~/.vim
 uninstall:
 	rm -rf ~/VimConfig
 	rm ~/.vimrc

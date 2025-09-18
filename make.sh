@@ -1,8 +1,8 @@
 #/bin/bash
 ln -s ~/VimConfig/.vimrc ~/.vimrc
-mkdir -p pack/sources
+rm -rf ~/.vim
+mkdir -p ~/.vim/pack/sources
 INPUT_FILE="plugins_list.txt"
-
 while IFS=, read repo folder
 do
     # trim spaces
@@ -10,5 +10,6 @@ do
     folder=$(echo "$folder" | xargs)
 
     echo "Cloning $repo into $folder ..."
-    git clone "https://github.com/$repo" "pack/sources/$folder"
+    git clone "https://github.com/$repo" "start/$folder"
 done < "$INPUT_FILE"
+mv start ~/.vim/pack/sources
