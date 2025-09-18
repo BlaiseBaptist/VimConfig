@@ -226,7 +226,7 @@ elseif &filetype == 'plantuml'
 elseif &filetype == 'zsh'
     exec "!time zsh %"
 elseif &filetype == 'asm'
-    exec "vert term make"
+    exec "!make"
 elseif &filetype == 'Make'
     exec "vert term make"
 endif
