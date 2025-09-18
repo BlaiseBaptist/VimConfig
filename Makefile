@@ -4,7 +4,6 @@ install:
 clean: 
 	rm -rf pack
 uninstall:
-	cd
-	rm -rf VimConfig
-	rm .vimrc
-	mv .vimrc.old .vimrc
+	rm -rf ~/VimConfig
+	rm ~/.vimrc
+	-mv ~/.vimrc.old ~/.vimrc
