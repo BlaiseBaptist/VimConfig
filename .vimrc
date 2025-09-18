@@ -232,6 +232,7 @@ elseif &filetype == 'Make'
 endif
 endfunc
 
+autocmd FileType asm setlocal commentstring=//%s
 map <F4> :call Test()<CR>
 imap <F4> <Esc>:call Test()<CR>
 vmap <F4> <Esc>:call Test()<CR>
