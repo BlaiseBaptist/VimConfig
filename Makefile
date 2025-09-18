@@ -9,3 +9,6 @@ setup_plugins: clone
 	mkdir -p ~/.vim/pack/sources
 clean:
 	rm -rf ~/.vim
+	rm ~/.vimrc
+	echo restoring old conf
+	mv ~/.vimrc.old ~/.vimrc
