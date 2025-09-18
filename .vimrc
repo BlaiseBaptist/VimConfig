@@ -1,4 +1,4 @@
-set runtimepath+=~/.vim
+set runtimepath+=~/VimConfig
 " Disable highlight when <leader><cr> is pressed
 let mapleader = ","
 map <silent> <leader><cr> :noh<cr>
