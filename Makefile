@@ -1,4 +1,5 @@
 install:
+	-mv ~/.vimrc ~/.vimrc.old
 	chmod +x make.sh
 	./make.sh
 clean: 

@@ -1,7 +1,5 @@
 #/bin/bash
-mv ~/.vimrc ~/.vimrc.old
 ln -s ~/VimConfig/.vimrc ~/.vimrc
-cd ~/VimConfig
 mkdir -p pack/sources
 INPUT_FILE="plugins_list.txt"
 
