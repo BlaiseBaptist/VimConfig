@@ -11,5 +11,5 @@ do
     folder=$(echo "$folder" | xargs)
 
     echo "Cloning $repo into $folder ..."
-    git clone "https://github.com/$repo" "$1/$folder"
+    git clone "https://github.com/$repo" "~/.vim/pack/sources/$folder"
 done < "$INPUT_FILE"
