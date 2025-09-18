@@ -1,11 +1,13 @@
-let mapleader = ","
-map <leader>ss :setlocal spell!<cr>
+
 " Disable highlight when <leader><cr> is pressed
+let mapleader = ","
 map <silent> <leader><cr> :noh<cr>
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+map <leader>ss :setlocal spell!<cr>
+map <leader>e :source ~/.vimrc<cr>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -57,6 +59,7 @@ elseif has("linux")
 elseif has("unix")
     set gfn=Monospace\ 11
 endif
+
 " Disable scrollbars
 set guioptions-=r
 set guioptions-=R
@@ -73,6 +76,14 @@ set regexpengine=0
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
+try
+    " 1 colorscheme evening
+    colorscheme slate
+    " 3 colorscheme habamax
+    " 4 colorscheme lunaperche
+catch
+endtry
+
 " Cursor
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
