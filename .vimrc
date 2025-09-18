@@ -1,4 +1,4 @@
-
+set runtimepath+=~/.vim
 " Disable highlight when <leader><cr> is pressed
 let mapleader = ","
 map <silent> <leader><cr> :noh<cr>
@@ -44,6 +44,27 @@ set magic
 set showmatch
 " Add a bit extra margin to the left
 set foldcolumn=1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Text, tab and indent related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use spaces instead of tabs
+set expandtab
+
+" Be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
+" Linebreak on 500 characters
+set lbr
+set tw=500
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GUI
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -204,6 +225,8 @@ elseif &filetype == 'plantuml'
 elseif &filetype == 'zsh'
     exec "!time zsh %"
 elseif &filetype == 'asm'
+    exec "vert term make"
+elseif &filetype == 'Make'
     exec "vert term make"
 endif
 endfunc
