@@ -1,4 +1,4 @@
-make:
+install:
 	chmod +x make.sh
 	./make.sh
 clean: 
