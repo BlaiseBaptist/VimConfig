@@ -1,4 +1,3 @@
-set runtimepath+=~/VimConfig/
 " return to same spot when file opened
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 let mapleader = ","

@@ -1,4 +1,4 @@
 dense-analysis/ale.git, ale
-preservim/nerdtree.git, bufexplorer
+jlanzarotta/bufexplorer.git, bufexplorer
 tpope/vim-commentary.git, commentary
 preservim/nerdtree.git, nerdtree
