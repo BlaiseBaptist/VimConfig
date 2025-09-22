@@ -1,6 +1,8 @@
 set runtimepath+=~/VimConfig/
-" Disable highlight when <leader><cr> is pressed
+" return to same spot when file opened
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 let mapleader = ","
+" Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 map <C-j> <C-W>j
 map <C-k> <C-W>k
