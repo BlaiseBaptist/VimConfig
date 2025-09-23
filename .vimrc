@@ -127,6 +127,9 @@ let g:ale_linters = {
 \   'python': ['flake8'],
 \   'go': ['go', 'golint', 'errcheck']
 \}
+let g:ale_fixers = {
+\   'c': ['clang-format'],
+\}
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 let g:ale_set_highlights = 0
 let g:ale_lint_on_text_changed = 'never'
