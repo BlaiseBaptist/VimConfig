@@ -2,3 +2,6 @@ dense-analysis/ale.git, ale
 jlanzarotta/bufexplorer.git, bufexplorer
 tpope/vim-commentary.git, commentary
 preservim/nerdtree.git, nerdtree
+aklt/plantuml-syntax.git, plantuml-syntax
+weirongxu/plantuml-previewer.vim.git, plantuml-previewer.vim
+tyru/open-browser.vim.git, open-browser.vim
