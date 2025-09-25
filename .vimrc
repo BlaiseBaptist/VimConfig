@@ -226,7 +226,7 @@ elseif &filetype == 'rust'
 elseif &filetype == 'arduino'
     exec "ArduinoUpload"
 elseif &filetype == 'plantuml'
-    exec "PlantumlOpen"
+    exec "PlantumlSave"
 elseif &filetype == 'zsh'
     exec "!time zsh %"
 elseif &filetype == 'asm'
